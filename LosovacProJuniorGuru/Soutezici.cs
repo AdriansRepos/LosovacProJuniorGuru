@@ -8,7 +8,8 @@ namespace LosovacProJuniorGuru
         public string Jmeno 
         { 
             get => _jmeno; 
-            private set => _jmeno = TitleCase.ToTitleCase(value); }
+            private set => _jmeno = TitleCase.ToTitleCase(value); 
+        }
 
         public Soutezici(string jmeno)
         {
