@@ -18,9 +18,8 @@ namespace LosovacProJuniorGuru
             if (jmeno.Length == 0)
                 return;
 
-            soutez.PridejSouteziciho(jmeno);
-            listSoutezici.Items.Add(jmeno);
-
+            Soutezici novy = soutez.PridejSouteziciho(jmeno);
+            listSoutezici.Items.Add(novy);   // pøidáme objekt Soutezici, ne string
             txtJmeno.Clear();
         }
 
@@ -32,14 +31,10 @@ namespace LosovacProJuniorGuru
                 return;
             }
 
-            string? jmeno = listSoutezici?.SelectedItem?.ToString();
-            if (jmeno is null)
-                return;
-
-            soutez.OdeberSouteziciho(jmeno);
-            if (listSoutezici?.SelectedItem != null)
+            if (listSoutezici.SelectedItem is Soutezici vybrany)
             {
-                listSoutezici.Items.Remove(listSoutezici.SelectedItem);
+                soutez.OdeberSouteziciho(vybrany.Jmeno);
+                listSoutezici.Items.Remove(vybrany);
             }
         }
 

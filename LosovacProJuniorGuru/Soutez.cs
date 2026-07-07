@@ -11,9 +11,11 @@ namespace LosovacProJuniorGuru
         private readonly List<Soutezici> soutezici = [];
         private readonly List<Soutezici> vyherci = [];
 
-        public void PridejSouteziciho(string jmeno)
+        public Soutezici PridejSouteziciho(string jmeno)
         {
-            soutezici.Add(new Soutezici(jmeno));
+            var s = new Soutezici(jmeno);
+            soutezici.Add(s);
+            return s;
         }
 
         public Soutezici[] VratVsechny()

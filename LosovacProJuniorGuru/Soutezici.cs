@@ -1,19 +1,15 @@
 ﻿using InputHelper;
+using System.Globalization;
 
 namespace LosovacProJuniorGuru
 {
     class Soutezici
-    {
-        private string _jmeno = string.Empty;
-        public string Jmeno 
-        { 
-            get => _jmeno; 
-            private set => _jmeno = TitleCase.ToTitleCase(value); 
-        }
+    {        
+        public string Jmeno { get; private set; }
 
         public Soutezici(string jmeno)
         {
-            Jmeno = jmeno;
+            Jmeno = TitleCase.ToTitleCase(jmeno);
         }
 
         public override string ToString()
