@@ -1,3 +1,13 @@
+## 🌐 Jazyk / Language Selection
+
+*Klikněte na sekci níže pro zobrazení v češtině nebo angličtině.*
+*Click on a section below to toggle between Czech and English.*
+
+---
+
+<details open>
+<summary>🇨🇿 <strong>ČEŠTINA (Czech Version)</strong></summary>
+
 # Losovač – WinForms aplikace v C#
 
 Losovač je jednoduchá WinForms aplikace vytvořená pro losování výherců ze seznamu soutěžících (vytvořená pro Junior Guru komunitu). Jde o mou první okenní aplikaci.
@@ -20,15 +30,13 @@ Losování má punc dramatičnosti – po dobu dvou sekund běží animace v pro
 
 ## Struktura projektu
 
+```text
 /Losovac
-
 ├── Form1.cs
-
 ├── Form1.Designer.cs
-
 ├── Program.cs
-
 └── README.md
+```
 
 ---
 
@@ -50,10 +58,75 @@ Losování má punc dramatičnosti – po dobu dvou sekund běží animace v pro
 ## Release
 
 **v1.0.0** – První vydaná verze. Zadání soutěžících, volba počtu výherců, losování s animací v progress baru.  
-[Stáhnout zde](https://github.com/AdriansRepos/LosovacProJuniorGuru/releases/tag/v1.0.0)
 
 **v1.1.0** – Opraven název okna aplikace. Přidána možnost smazání soutěžícího ze seznamu.  
-[Stáhnout zde](https://github.com/AdriansRepos/LosovacProJuniorGuru/releases/tag/v1.1.0)
 
 **v1.2.0** – Přidána knihovna `InputHelper` – zadané jméno se nyní automaticky opraví na velké počáteční písmeno i v případě chybného zadání s malým písmenem.  
-[Stáhnout zde](https://github.com/AdriansRepos/LosovacProJuniorGuru/releases/tag/v1.2.0)
+
+[Aktuální verze ke stažení zde](https://github.com/AdriansRepos/LosovacProJuniorGuru/releases)
+
+</details>
+
+---
+
+<details>
+<summary>🇺🇸 <strong>ENGLISH (English Version)</strong></summary>
+
+# Losovač – WinForms C# Application
+
+Losovač is a simple Windows Forms desktop application built for drawing winners from a list of contestants (created for the Junior Guru community). It marks my very first desktop windowed application.
+
+---
+
+## Features
+
+- Enter a list of contestants (name by name).
+- Choose the number of winners to draw.
+- Randomly draw the specified number of names from the list.
+- Delete a contestant from the list.
+- Automatic text formatting to ensure names start with a capital letter (even if entered incorrectly in lowercase).
+
+## Drawing Process
+
+The drawing features a touch of suspense—a progress bar animation runs for two seconds, during which the **Draw** button is disabled, followed by displaying the winners in the **Winners** box.
+
+---
+
+## Project Structure
+
+```text
+/Losovac
+├── Form1.cs
+├── Form1.Designer.cs
+├── Program.cs
+└── README.md
+```
+
+---
+
+### External Libraries
+
+- **InputHelper** – Automatic name formatting to TitleCase (`TitleCase.ToTitleCase`). Losovač uses a lightweight, specialized version of this library since it focuses solely on names rather than complex validations or city-name prepositions.
+
+---
+
+## Core Techniques & Patterns
+
+- Windows Forms (WinForms)
+- Working with `ProgressBar` and `Timer` for drawing animations
+- Random element selection from collections
+- Text input validation and sanitization via shared library
+
+---
+
+## Release History
+
+- **v1.0.0** – Initial release. Contestant input, winner count selection, and progress bar animation drawing.  
+
+- **v1.1.0** – Fixed application window title. Added ability to delete contestants from the list.  
+
+- **v1.2.0** – Integrated `InputHelper` library – names are now automatically formatted to start with a capital letter.  
+
+[Downolad latest release here](https://github.com/AdriansRepos/LosovacProJuniorGuru/releases)
+
+</details>
