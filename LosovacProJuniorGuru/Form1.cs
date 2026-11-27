@@ -47,13 +47,7 @@ namespace LosovacProJuniorGuru
                 MessageBox.Show("Nejprve pøidej soutìžící.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            if (numericVyherci.Value == 0)
-            {
-                MessageBox.Show("Poèet výhercù musí být alespoò 1.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
+                        
             if (numericVyherci.Value > soutez.VratVsechny().Length)
             {
                 MessageBox.Show("Poèet výhercù nemùže být vìtší než poèet soutìžících.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
