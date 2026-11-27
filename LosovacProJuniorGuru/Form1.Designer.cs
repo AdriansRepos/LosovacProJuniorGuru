@@ -117,9 +117,11 @@
             numericVyherci.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 238);
             numericVyherci.Location = new Point(501, 290);
             numericVyherci.Margin = new Padding(3, 4, 3, 4);
+            numericVyherci.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numericVyherci.Name = "numericVyherci";
             numericVyherci.Size = new Size(60, 24);
             numericVyherci.TabIndex = 6;
+            numericVyherci.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // btnLosovat
             // 
