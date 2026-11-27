@@ -61,9 +61,27 @@ Losování má punc dramatičnosti – po dobu dvou sekund běží animace v pro
 
 **v1.1.0** – Opraven název okna aplikace. Přidána možnost smazání soutěžícího ze seznamu.  
 
-**v1.2.0** – Přidána knihovna `InputHelper` – zadané jméno se nyní automaticky opraví na velké počáteční písmeno i v případě chybného zadání s malým písmenem.  
+**v1.2.0** – Přidána knihovna `InputHelper` – zadané jméno se nyní automaticky opraví na velké počáteční písmeno i v případě chybného zadání s malým písmenem. 
+
+**v1.3.0** - Oprava počtu výherců. Minimální počet výherců je stanoven na 1.
 
 [Aktuální verze ke stažení zde](https://github.com/AdriansRepos/LosovacProJuniorGuru/releases)
+
+---
+
+### 📸 Ukázky aplikace
+
+#### Obrazovka s přidanými soutěžícími
+
+![Obrazovka s přidanými soutěžícími](LosovacProJuniorGuru/Assets/obrazovka_s_pridanymi_soutezicimi.png)
+
+#### Průběh losování
+
+![Průběh losování](LosovacProJuniorGuru/Assets/prubeh_losovani.png)
+
+#### Vylosování výherce
+
+![Vylosování výherce](LosovacProJuniorGuru/Assets/vylosovani_vyherce.png)
 
 </details>
 
@@ -121,12 +139,30 @@ The drawing features a touch of suspense—a progress bar animation runs for two
 
 ## Release History
 
-- **v1.0.0** – Initial release. Contestant input, winner count selection, and progress bar animation drawing.  
+**v1.0.0** – Initial release. Contestant input, winner count selection, and progress bar animation drawing.  
 
-- **v1.1.0** – Fixed application window title. Added ability to delete contestants from the list.  
+**v1.1.0** – Fixed application window title. Added ability to delete contestants from the list.  
 
-- **v1.2.0** – Integrated `InputHelper` library – names are now automatically formatted to start with a capital letter.  
+**v1.2.0** – Integrated `InputHelper` library – names are now automatically formatted to start with a capital letter.
+
+**v1.3.0** - Correction of the number of winners. The minimum number of winners is set to 1.
 
 [Downolad latest release here](https://github.com/AdriansRepos/LosovacProJuniorGuru/releases)
+
+---
+
+### 📸 App Screenshots
+
+#### Screen with added entrants
+
+![Screen with added entrants](LosovacProJuniorGuru/Assets/obrazovka_s_pridanymi_soutezicimi.png)
+
+#### The draw process
+
+![The draw process](LosovacProJuniorGuru/Assets/prubeh_losovani.png)
+
+#### Selecting a winner
+
+![Selecting a winner](LosovacProJuniorGuru/Assets/vylosovani_vyherce.png)
 
 </details>
